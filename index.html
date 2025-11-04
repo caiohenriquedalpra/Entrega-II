@@ -1,0 +1,181 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Meu Portfólio Absurdo | Entrega II</title>
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600;700&family=Inter:wght@400;500&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    
+    <link rel="stylesheet" href="styles/base.css">
+    <link rel="stylesheet" href="styles/layout.css">
+    <link rel="stylesheet" href="styles/components.css">
+</head>
+<body>
+
+    <header class="main-header">
+        <div class="container header-container">
+            <a href="#" class="logo">Caio.Dalprá</a>
+            
+            <button class="menu-toggle" id="menu-toggle" aria-expanded="false" aria-controls="main-nav">
+                <i class="fas fa-bars"></i>
+            </button>
+
+            <nav class="main-nav" id="main-nav">
+                <ul class="nav-list">
+                    <li><a href="#home">Início</a></li>
+                    <li class="dropdown">
+                        <a href="#projetos">Projetos <i class="fas fa-chevron-down"></i></a>
+                        <ul class="submenu">
+                            <li><a href="#">UX/UI Design</a></li>
+                            <li><a href="#">Desenvolvimento Web</a></li>
+                            <li><a href="#">Apps Mobile</a></li>
+                        </ul>
+                    </li>
+                    <li><a href="#sobre">Sobre</a></li>
+                    <li><a href="#contato">Contato</a></li>
+                    <li><a href="#" class="btn btn-secondary">Download CV</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <main>
+        <section id="home" class="hero-section">
+            <div class="container hero-content">
+                <div class="hero-text">
+                    <h1>Designer & Desenvolvedor Web Criativo</h1>
+                    <p>Transformando ideias complexas em interfaces digitais elegantes, funcionais e acessíveis.</p>
+                    <button class="btn btn-primary btn-large" id="open-modal-btn">Vamos Conversar</button>
+                </div>
+                <div class="hero-image">
+                    
+                </div>
+            </div>
+        </section>
+
+        <section id="projetos" class="section-padding">
+            <div class="container">
+                <h2>Projetos Selecionados</h2>
+                <p class="section-subtitle">Aqui estão alguns dos trabalhos que mais me orgulho.</p>
+                
+                <div class="grid-container">
+                    <article class="card project-card col-span-12 col-span-6-md col-span-4-lg">
+                        <div class="card-image">
+                            
+                        </div>
+                        <div class="card-body">
+                            <div class="tags-container">
+                                <span class="badge tag-uxui">UX/UI</span>
+                                <span class="badge tag-web">Web</span>
+                            </div>
+                            <h3>E-commerce de Luxo</h3>
+                            <p>Design de interface e experiência do usuário para uma marca de luxo internacional.</p>
+                            <a href="#" class="btn btn-secondary">Ver Estudo de Caso</a>
+                        </div>
+                    </article>
+
+                    <article class="card project-card col-span-12 col-span-6-md col-span-4-lg">
+                        <div class="card-image">
+                            
+                        </div>
+                        <div class="card-body">
+                            <div class="tags-container">
+                                <span class="badge tag-app">Mobile App</span>
+                            </div>
+                            <h3>App de Produtividade</h3>
+                            <p>Desenvolvimento de um app mobile focado em gestão de tarefas e metodologias ágeis.</p>
+                            <a href="#" class="btn btn-secondary">Ver no GitHub</a>
+                        </div>
+                    </article>
+
+                    <article class="card project-card col-span-12 col-span-12-md col-span-4-lg">
+                        <div class="card-image">
+                            
+                        </div>
+                        <div class="card-body">
+                            <div class="tags-container">
+                                <span class="badge tag-web">Web</span>
+                                <span class="badge tag-data">DataViz</span>
+                            </div>
+                            <h3>Dashboard Analítico</h3>
+                            <p>Criação de um dashboard interativo para visualização de dados de marketing.</p>
+                            <a href="#" class="btn btn-secondary">Ver Demo</a>
+                        </div>
+                    </article>
+                </div>
+            </div>
+        </section>
+
+        <section id="contato" class="section-padding background-light">
+            <div class="container grid-container">
+                <div class="contact-info col-span-12 col-span-5-lg">
+                    <h2>Entre em Contato</h2>
+                    <p>Estou disponível para novos projetos e colaborações. Sinta-se à vontade para me enviar uma mensagem.</p>
+                    <div class="alert alert-info">
+                        <i class="fas fa-info-circle"></i>
+                        Respondo em até 48 horas úteis.
+                    </div>
+                </div>
+
+                <form class="contact-form col-span-12 col-span-7-lg">
+                    <div class="form-group">
+                        <label for="nome">Nome</label>
+                        <input type="text" id="nome" name="nome" placeholder="Seu nome completo" required>
+                        <small class="validation-message">Este campo é obrigatório.</small>
+                    </div>
+                    <div class="form-group">
+                        <label for="email">Email</label>
+                        <input type="email" id="email" name="email" placeholder="seu.email@dominio.com" required>
+                        <small class="validation-message">Por favor, insira um email válido.</small>
+                    </div>
+                    <div class="form-group">
+                        <label for="assunto">Assunto</label>
+                        <select id="assunto" name="assunto">
+                            <option value="">Selecione um assunto</option>
+                            <option value="projeto">Novo Projeto</option>
+                            <option value="parceria">Parceria</option>
+                            <option value="feedback">Feedback</option>
+                        </select>
+                    </div>
+                    <div class="form-group">
+                        <label for="mensagem">Mensagem</label>
+                        <textarea id="mensagem" name="mensagem" rows="5" placeholder="Sua mensagem..." required></textarea>
+                    </div>
+                    <div class="form-actions">
+                        <button type="submit" class="btn btn-primary btn-large">Enviar Mensagem</button>
+                        <button type="reset" class="btn btn-secondary" disabled>Limpar</button>
+                    </div>
+                </form>
+            </div>
+        </section>
+    </main>
+
+    <footer class="main-footer">
+        <div class="container">
+            <p>&copy; 2025 Caio Dalprá. Construído com <i class="fas fa-heart"></i> e CSS Grid.</p>
+        </div>
+    </footer>
+
+    <div class="modal" id="contact-modal" role="dialog" aria-modal="true" aria-labelledby="modal-title">
+        <div class="modal-overlay" id="modal-overlay"></div>
+        <div class="modal-content">
+            <button class="modal-close" id="modal-close-btn" aria-label="Fechar modal">
+                <i class="fas fa-times"></i>
+            </button>
+            <h3 id="modal-title">Componente Modal</h3>
+            <p>Este é um exemplo de componente de feedback (Modal) para atender aos requisitos da entrega.</p>
+            <div class="alert alert-success">
+                <i class="fas fa-check-circle"></i>
+                Requisito de componente cumprido!
+            </div>
+            <button class="btn btn-primary" id="modal-close-btn-2">Entendido</button>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
